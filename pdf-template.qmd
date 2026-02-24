@@ -13,3 +13,8 @@ format:
 
 # Test
 This is a test.
+
+# LaTeX formula
+
+$$ Y_{it} = \mu_t + \alpha \left(Y_{i,t-1} - \mu_{t-1}\right) + \gamma \, PA^{W}_{i,t-1} + \varepsilon_{it}, \qquad
+E(\varepsilon_{it} \mid Y_{i,t-1}) = 0. $$
