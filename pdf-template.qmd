@@ -1,0 +1,15 @@
+---
+title: "Title"
+author: "Author 1 (First Name Last Name)"
+format: 
+  pdf:
+    documentclass: article   
+    fontsize: 11pt          
+    geometry: "top=2.5cm,bottom=2.5cm,left=2.5cm,right=3.5cm"
+    mainfont: "Arial"        # font family
+    linestretch: 1.5         # line spacing
+    latex-engine: xelatex
+---
+
+# Test
+This is a test.
