@@ -1,0 +1,10 @@
+---
+title: "Title"
+author: "Author 1 (First Name Last Name)"
+format: 
+  docx:
+    reference-doc: bfh-template.docx
+---
+
+# Test
+This is a test.
