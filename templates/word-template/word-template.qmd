@@ -1,10 +1,40 @@
 ---
-title: "Title"
-author: "Author 1 (First Name Last Name)"
-format: 
+# Core metadata used on the title page (see titlepage.qmd)
+title: "Test"
+subtitle: "[Subtitle]"
+author: "[Name, highest academic degree]"
+
+# Printed as the last line on the title page (e.g., "Bern, 17 February 2026")
+date: "[City, Date]"
+
+work-type: "Master-Thesis"
+requirements: "Fulfilment of the requirements for the Master of Science (MSc) in Physiotherapy"
+matriculation-number: "[XX-XXX-XXX]"
+institution: "Bern University of Applied Sciences, School of Health Professions"
+program: "Master of Science (MSc) in Physiotherapy"
+class: "[Class (e.g. 2019)]"
+
+# Tip: for multiple advisors, use a YAML block scalar:
+# advisor: |
+#   Name 1, degree
+#   Name 2, degree
+advisor: "[Name, highest academic degree]"
+
+format:
   docx:
     reference-doc: bfh-reference.docx
     title-block: false
+    include-before-body: titlepage.qmd
+    toc: true
+    toc-title: "Table of Contents"
+    number-sections: true
+
+crossref:
+  fig-title: "Figure"
+  tbl-title: "Table"
+
+bibliography: references.bib
+csl: apa.csl
 ---
 
 ```{r}
@@ -12,6 +42,7 @@ format:
 #| output: false
 #| warning: false
 #| message: false
+#| label: "Packages"
 library(here)
 ```
 

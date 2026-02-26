@@ -1,0 +1,47 @@
+::: {custom-style="TitlePageTitle"}
+{{< meta title >}}
+:::
+
+<!-- ::: {custom-style="TitlePageSubtitle"} -->
+<!-- {{< meta subtitle >}} -->
+<!-- ::: -->
+
+<!-- ::: {custom-style="TitlePageLine"} -->
+<!-- {{< meta work-type >}} -->
+<!-- ::: -->
+
+<!-- ::: {custom-style="TitlePageLine"} -->
+<!-- {{< meta requirements >}} -->
+<!-- ::: -->
+
+<!-- ::: {custom-style="TitlePageLine"} -->
+<!-- {{< meta author >}} -->
+<!-- ::: -->
+
+<!-- ::: {custom-style="TitlePageLine"} -->
+<!-- Matriculation number: {{< meta matriculation-number >}} -->
+<!-- ::: -->
+
+<!-- ::: {custom-style="TitlePageLine"} -->
+<!-- {{< meta institution >}} -->
+<!-- ::: -->
+
+<!-- ::: {custom-style="TitlePageLine"} -->
+<!-- {{< meta program >}}, {{< meta class >}} -->
+<!-- ::: -->
+
+<!-- ::: {custom-style="TitlePageAdvisorLabel"} -->
+<!-- Advisor / Co-Advisor: -->
+<!-- ::: -->
+
+<!-- ::: {custom-style="TitlePageAdvisor"} -->
+<!-- {{< meta advisor >}} -->
+<!-- ::: -->
+
+<!-- ::: {custom-style="TitlePageLine"} -->
+<!-- {{< meta date >}} -->
+<!-- ::: -->
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
