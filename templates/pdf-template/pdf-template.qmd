@@ -1,14 +1,45 @@
 ---
-title: "Title"
-author: "Author 1 (First Name Last Name)"
-format: 
+title: "[Title]"
+subtitle: "[Subtitle]"
+author: "[Name, highest academic degree]"
+date: "[City, Date]"
+
+work-type: "Master-Thesis"
+requirements: "Fulfilment of the requirements for the Master of Science (MSc) in Physiotherapy"
+matriculation-number: "[XX-XXX-XXX]"
+institution: "Bern University of Applied Sciences, School of Health Professions"
+program: "Master of Science (MSc) in Physiotherapy"
+class: "[Class (e.g. 2019)]"
+advisor: "[Name, highest academic degree]"
+
+format:
   pdf:
-    documentclass: article   
+    pdf-engine: lualatex
+    documentclass: article
     fontsize: 11pt          
-    geometry: "top=2.5cm,bottom=2.5cm,left=2.5cm,right=3.5cm"
+    geometry: "top=2.5cm,bottom=2.5cm,left=3.5cm,right=2.5cm"
     mainfont: "Arial"        # font family
     linestretch: 1.5         # line spacing
-    latex-engine: xelatex
+    toc: true
+    number-sections: true
+    include-in-header: header.tex
+    include-before-body: titlepage.tex
+    title-block: false
+
+filters: [remove_title.lua] # removes the automatically generated title block using the remove_title.lua script
+
+fontsize: 11pt
+linestretch: 1.5
+
+geometry:
+  - a4paper
+  - left=3.5cm
+  - right=2.5cm
+  - top=2.5cm
+  - bottom=2.5cm
+
+bibliography: references.bib
+csl: apa.csl
 ---
 
 # Test
