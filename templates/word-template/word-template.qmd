@@ -3,10 +3,24 @@ title: "Title"
 author: "Author 1 (First Name Last Name)"
 format: 
   docx:
-    reference-doc: bfh-template.docx
+    reference-doc: bfh-reference.docx
+    title-block: false
 ---
 
-# Test
+```{r}
+#| echo: false
+#| output: false
+#| warning: false
+#| message: false
+library(here)
+```
+
+
+# Heading 1
+
+## Heading 1.1
+
+### Heading 1.1.1
 This is a test.
 
 # LaTeX formula
