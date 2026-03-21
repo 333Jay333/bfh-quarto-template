@@ -49,7 +49,33 @@ csl: apa.csl
 ### Heading 1.1.1
 This is a test.
 
-# LaTeX formula
+# Examples
+
+## Citations
+This is a normal citation [@wickham2019].
+
+Wickham [-@wickham2019] wrote this and @nobody2023 wrote this.
+
+Multiple authors wrote this [also @wickham2019; @nobody2023 pp. 10-11]. 
+
+## LaTeX formula
 
 $$ Y_{it} = \mu_t + \alpha \left(Y_{i,t-1} - \mu_{t-1}\right) + \gamma \, PA^{W}_{i,t-1} + \varepsilon_{it}, \qquad
 E(\varepsilon_{it} \mid Y_{i,t-1}) = 0. $$
+
+# References
+
+::: {#refs}
+:::
+
+{{< pagebreak >}}
+
+# List of Figures
+
+# List of Tables
+
+# List of abbreviations
+
+# List of aids  
+
+# Supplements
