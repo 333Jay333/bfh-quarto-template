@@ -43,7 +43,7 @@ csl: apa.csl
 
 {{< pagebreak >}}
 
-# Abstract
+# Abstract {.unnumbered}
 
 {{< pagebreak >}}
 
@@ -59,7 +59,7 @@ This is a test.
 ## Citations
 This is a normal citation [@wickham2019].
 
-Wickham [-@wickham2019] wrote this and @nobody2023 wrote this.
+Wickham et al. [-@wickham2019] wrote this and @nobody2023 wrote this.
 
 Multiple authors wrote this [also @wickham2019; @nobody2023 pp. 10-11]. 
 
@@ -75,6 +75,24 @@ The LaTeX logo can be seen in @fig-latex-logo.
 ![LaTeX logo](figures/LaTeX_logo.png){#fig-latex-logo}
 
 ## Table
+
+An example of a table can be seen in @tbl-cars.
+
+```{r}
+#| label: tbl-cars
+#| tbl-cap: "Cars and pressure from cars dataset"
+#| tbl-subcap: 
+#|   - "Cars"
+#|   - "Pressure"
+#| layout-ncol: 2
+#| echo: false
+
+library(knitr)
+kable(head(cars))
+kable(head(pressure))
+```
+
+{{< pagebreak >}}
 
 # References
 
@@ -93,6 +111,12 @@ The LaTeX logo can be seen in @fig-latex-logo.
 
 # List of abbreviations
 
+{{< pagebreak >}}
+
 # List of aids  
 
-# Supplements
+{{< pagebreak >}}
+
+# Appendix
+
+{{< pagebreak >}}
