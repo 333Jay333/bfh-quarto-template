@@ -83,11 +83,13 @@ The LaTeX logo can be seen in @fig-latex-logo.
 
 {{< pagebreak >}}
 
-# List of Figures
-
 \listoffigures
 
-# List of Tables
+{{< pagebreak >}}
+
+\listoftables
+
+{{< pagebreak >}}
 
 # List of abbreviations
 

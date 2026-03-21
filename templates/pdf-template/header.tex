@@ -3,6 +3,7 @@
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{}
+\usepackage[nottoc,numbib]{tocbibind} % to include the list of figures in the toc
 
 
 % Remove header rule
@@ -33,3 +34,14 @@
   {\normalfont\fontsize{11pt}{13.2pt}\selectfont}
   {\thesubsubsection}{1em}{}
   
+% make list of figures numbered
+\renewcommand{\listoffigures}{\begingroup
+\tocsection
+\tocfile{\listfigurename}{lof}
+\endgroup}
+
+% make list of tables numbered
+\renewcommand{\listoftables}{\begingroup
+\tocsection
+\tocfile{\listtablename}{lot}
+\endgroup}
