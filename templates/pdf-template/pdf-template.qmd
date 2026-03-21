@@ -5,7 +5,6 @@ author: "[Name, highest academic degree]"
 date: "[City, Date]"
 
 work-type: "Master-Thesis"
-requirements: "Fulfilment of the requirements for the Master of Science (MSc) in Physiotherapy"
 matriculation-number: "[XX-XXX-XXX]"
 institution: "Bern University of Applied Sciences, School of Health Professions"
 program: "Master of Science (MSc) in Physiotherapy"
@@ -20,7 +19,7 @@ format:
     geometry: "top=2.5cm,bottom=2.5cm,left=3.5cm,right=2.5cm"
     mainfont: "Arial"        # font family
     linestretch: 1.5         # line spacing
-    toc: true
+    toc: true # generate a table of contents
     number-sections: true
     include-in-header: header.tex
     include-before-body: titlepage.tex
@@ -41,6 +40,12 @@ geometry:
 bibliography: references.bib
 csl: apa.csl
 ---
+
+{{< pagebreak >}}
+
+# Abstract
+
+{{< pagebreak >}}
 
 # Heading 1
 
@@ -63,6 +68,14 @@ Multiple authors wrote this [also @wickham2019; @nobody2023 pp. 10-11].
 $$ Y_{it} = \mu_t + \alpha \left(Y_{i,t-1} - \mu_{t-1}\right) + \gamma \, PA^{W}_{i,t-1} + \varepsilon_{it}, \qquad
 E(\varepsilon_{it} \mid Y_{i,t-1}) = 0. $$
 
+## Figure
+
+The LaTeX logo can be seen in @fig-latex-logo.
+
+![LaTeX logo](figures/LaTeX_logo.png){#fig-latex-logo}
+
+## Table
+
 # References
 
 ::: {#refs}
@@ -71,6 +84,8 @@ E(\varepsilon_{it} \mid Y_{i,t-1}) = 0. $$
 {{< pagebreak >}}
 
 # List of Figures
+
+\listoffigures
 
 # List of Tables
 
