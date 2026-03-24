@@ -1,37 +1,46 @@
 \begin{titlepage}
 \thispagestyle{empty}
 
-\vspace*{2cm}
+% Large top margin similar to Word template
+\vspace*{3cm}
 
-{\Large\bfseries $title$ \par}
-\vspace{0.5cm}
+% Title (large, bold)
+{\fontsize{24pt}{36pt}\selectfont\bfseries
+[Title]\par}
 
-{\large $subtitle$ \par}
+\vspace{8.5cm}
 
-\vspace{1.5cm}
+{\fontsize{12pt}{18pt}\selectfont
+[Type of work]
+\par
 
-$work-type$ \par
-$requirements$ \par
+\begin{tabularx}{\textwidth}{
+  @{} >{\raggedright\arraybackslash}X % @{} to remove table margin
+  >{\raggedright\arraybackslash}X @{} }
+[Author 1 (Name, Surname)] & Matriculation number: [XX-XXX-XXX] % \\ % uncomment if neccessary
+% [Author 2 (Name, Surname)] & Matriculation number: [XX-XXX-XXX] % uncomment if neccessary
+\end{tabularx}
+\par
 
-\vspace{1.5cm}
+Bern University of Applied Sciences, School of Health Professions
+\par
 
-$author$ \par
-Matriculation number: $matriculation-number$ \par
+[Degree], [year], [location]
+\par
 
-\vspace{1.2cm}
+\begin{tabularx}{\textwidth}{
+  @{} >{\raggedright\arraybackslash}X % @{} to remove table margin
+  >{\raggedright\arraybackslash}X @{} }
+Supervisor & [Name Surname, title] \\
+Co-supervisor & [Name Surname, title]
+\end{tabularx}
+}
 
-$institution$ \par
-$program$, $class$ \par
-
-\vspace{1.2cm}
-
-Advisor / Co-Advisor:\par
-$advisor$ \par
 
 \vfill
 
-$date$
+% Location + date at the bottom
+{\fontsize{12pt}{14.4pt}\selectfont
+[City], [Submission date]\par}
 
 \end{titlepage}
-
-\clearpage
