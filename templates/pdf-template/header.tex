@@ -3,28 +3,22 @@
 % DO NOT CHANGE ANYTHING HERE
 
 % PACKAGES
+% Headings
 \usepackage{titlesec} % to define heading styles
-\usepackage{fancyhdr} % for the header and footer
+
+% Header and footer
+\usepackage{fancyhdr} % for the styling of header and footer
 \pagestyle{fancy}
 \fancyhf{}
+
+% Table of contents, list of figures, list of tables
 \usepackage[nottoc,numbib]{tocbibind} % to include the list of figures in the toc
 \usepackage{tabularx} % for tables
-
 \usepackage[titles]{tocloft} % titles option is needed such that toc, lof, lot use heading 1 style
 
-% Remove header rule
-\renewcommand{\headrulewidth}{0pt}
+% SETUP
 
-% Header + footer
-\fancyhead[R]{\fontsize{9pt}{11pt}\selectfont [Short title of the work]}
-\fancyfoot[R]{\fontsize{8pt}{11pt}\selectfont \thepage}
-
-% No header/footer on title page
-\fancypagestyle{plain}{
-  \fancyhf{}
-  \renewcommand{\headrulewidth}{0pt}
-}
-
+% Headings
 % Make Heading 1 upper-case and 14pt
 \titleformat{\section}
   {\normalfont\bfseries\fontsize{14pt}{16.8pt}\selectfont}
@@ -39,6 +33,46 @@
 \titleformat{\subsubsection}
   {\normalfont\fontsize{11pt}{13.2pt}\selectfont}
   {\thesubsubsection}{1em}{}
+
+% Header & Footer
+% Remove header rule
+\renewcommand{\headrulewidth}{0pt}
+
+% Header + footer
+\fancyhead[R]{\fontsize{9pt}{11pt}\selectfont [Short title of the work]}
+\fancyfoot[R]{\fontsize{8pt}{11pt}\selectfont \thepage}
+
+% Table of contents, list of figures, list of tables
+% Remove dots in toc
+\renewcommand{\cftdot}{}
+
+% increase line spacing in toc. This is difficult to get exactly to 1.5 because of paragraph spacing interactions
+\renewcommand{\cftbeforesecskip}{1\baselineskip}
+\renewcommand{\cftbeforesubsecskip}{0.75\baselineskip}
+\renewcommand{\cftbeforesubsubsecskip}{0.75\baselineskip}
+
+% set the indents for the different levels
+% --- Level 1 (section) ---
+% Number indent = 0 cm
+% Title indent = 1.0 cm
+\setlength{\cftsecindent}{0cm}
+\setlength{\cftsecnumwidth}{1cm}   % pushes title start to 1 cm
+
+% --- Level 2 (subsection) ---
+% Number indent = 1.3 cm
+% Title start = 2.5 cm total → numwidth = 2.5 - 1.3 = 1.2 cm
+\setlength{\cftsubsecindent}{1.3cm}
+\setlength{\cftsubsecnumwidth}{1.2cm}
+
+% --- Level 3 (subsubsection) ---
+% Same geometry as Level 2
+\setlength{\cftsubsubsecindent}{1.3cm}
+\setlength{\cftsubsubsecnumwidth}{1.2cm}
+
+% make Heading 1 levels in toc bold
+% --- Level 1 (section) formatting ---
+\renewcommand{\cftsecfont}{\bfseries}
+\renewcommand{\cftsecpagefont}{\bfseries}
   
 % make list of figures numbered
 \renewcommand{\listoffigures}{\begingroup

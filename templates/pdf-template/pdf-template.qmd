@@ -37,6 +37,16 @@ csl: apa.csl
 
 # Abstract {.unnumbered}
 
+**Introduction:** text
+
+**Methods:** text
+
+**Results:** text
+
+**Conclusions:** text
+
+**Keywords:** text
+
 {{< pagebreak >}}
 
 # Heading 1
