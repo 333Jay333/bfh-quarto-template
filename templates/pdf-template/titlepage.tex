@@ -1,18 +1,26 @@
 \begin{titlepage}
-\thispagestyle{empty}
 
-% Large top margin similar to Word template
-\vspace*{3cm}
+% OPTIONS
+\thispagestyle{empty} % no header & footer
+\renewcommand{\arraystretch}{1.5} % line spacing in tables
+
+% TITLE PAGE
+% Adjust the information in square brackets accordingly
+% Also, comment/uncomment lines according to your specifications
+
+% Large top margin
+\vspace*{3cm} % * is needed here to make the space unbreakable
 
 % Title (large, bold)
 {\fontsize{24pt}{36pt}\selectfont\bfseries
-[Title]\par}
+  [Title]
+  \par
+}
 
 \vspace{8.5cm}
 
 {\fontsize{12pt}{18pt}\selectfont
   [Type of work]
-  \par
   
   \begin{tabularx}{\textwidth}{
     @{} >{\raggedright\arraybackslash}X % @{} to remove table margin
@@ -33,9 +41,9 @@
   \begin{tabularx}{\textwidth}{
     @{} >{\raggedright\arraybackslash}X % @{} to remove table margin
     >{\raggedright\arraybackslash}X @{} }
-  Supervisor & [Name Surname], [title] \\
-  Co-supervisor & [Name Surname], [title] % \\  % uncomment if neccessary
-  % Sponsor & [Name Surname], [title]
+  Supervisor & [Name Surname], [Title] \\
+  Co-supervisor & [Name Surname], [Title] % \\  % uncomment if neccessary
+  % Sponsor & [Name Surname], [Title]
   \end{tabularx}
 }
 
@@ -45,6 +53,27 @@
 
 % Location + date at the bottom
 {\fontsize{12pt}{14.4pt}\selectfont
-[City], [Submission date]\par}
+  [Place], [Submission date]
+  \par
+}
 
+
+% ACKNOWLEDGEMENTS PAGE
+% Comment if not needed
+
+\newpage
+
+\thispagestyle{empty}
+
+% Large top margin
+\vspace*{3cm} % * is needed here to make the space unbreakable
+
+{\fontsize{12pt}{14.4pt}\selectfont
+  Acknowledgements
+  \par
+}
+
+% END OF TITLE PAGE
+% Do not comment
 \end{titlepage}
+
