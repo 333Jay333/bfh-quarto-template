@@ -1,15 +1,6 @@
 ---
 title: "[Title]"
-subtitle: "[Subtitle]"
-author: "[Name, highest academic degree]"
-date: "[City, Date]"
-
-work-type: "Master-Thesis"
-matriculation-number: "[XX-XXX-XXX]"
-institution: "Bern University of Applied Sciences, School of Health Professions"
-program: "Master of Science (MSc) in Physiotherapy"
-class: "[Class (e.g. 2019)]"
-advisor: "[Name, highest academic degree]"
+author: "[Author]"
 
 format:
   pdf:
@@ -21,6 +12,7 @@ format:
     linestretch: 1.5         # line spacing
     toc: true # generate a table of contents
     number-sections: true
+    colorlinks: false
     include-in-header: header.tex
     include-before-body: titlepage.tex
     title-block: false

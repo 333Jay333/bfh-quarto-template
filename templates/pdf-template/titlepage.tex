@@ -1,31 +1,46 @@
+% README
+% This file includes all the information for the title and acknowledgements page
+% ENTER YOUR DATA HERE (AJDUST TEXT IN SQUARE BRACKETS)
+\newcommand{\worktitle}{[Title]}
+\newcommand{\worktype}{[Type of Work]}
+\newcommand{\firstauthor}{[Author 1 (Name Surname)]}
+\newcommand{\matnum}{[XX-XXX-XXX]} % Matriculation number of author 1
+\newcommand{\degree}{[Degree]}
+\newcommand{\cohort}{[Cohort]}
+\newcommand{\location}{[Location]}
+\newcommand{\supervisor}{[Name Surname], [Title]}
+\newcommand{\cosupervisor}{[Name Surname], [Title]}
+\newcommand{\place}{[Place]}
+\newcommand{\submitdate}{[Submission date]}
+\newcommand{\acknowledgements}{[Your text here. \\ LaTeX is a powerful typesetting system widely used for creating documents with com-plex formatting, such as academic papers, theses, and technical reports. One commonchallenge in LaTeX document preparation is handling placeholder text during the designphase. This is where lipsum comes into play. In this article, we will explore what “lipsum”is in the context of LaTeX, how it can be used, and why it is a valuable tool for documentpreparation.]}
+
+% TITLE PAGE
+% COMMENT/UNCOMMENT LINES ACCORDING TO YOUR SPECIFICATIONS
+% ADJUST THE INFORMATION IN SQUARE BRACKETS ACCORDINGLY
 \begin{titlepage}
 
 % OPTIONS
 \thispagestyle{empty} % no header & footer
 \renewcommand{\arraystretch}{1.5} % line spacing in tables
 
-% TITLE PAGE
-% Adjust the information in square brackets accordingly
-% Also, comment/uncomment lines according to your specifications
-
 % Large top margin
 \vspace*{3cm} % * is needed here to make the space unbreakable
 
 % Title (large, bold)
 {\fontsize{24pt}{36pt}\selectfont\bfseries
-  [Title]
+  \worktitle
   \par
 }
 
 \vspace{8.5cm}
 
-{\fontsize{12pt}{18pt}\selectfont
-  [Type of work]
+{\fontsize{11pt}{16.5pt}\selectfont
+  \worktype
   
   \begin{tabularx}{\textwidth}{
-    @{} >{\raggedright\arraybackslash}X % @{} to remove table margin
+    @{} >{\raggedright\arraybackslash}X % @{} is neccessary to remove table margin
     >{\raggedright\arraybackslash}X @{} }
-  [Author 1 (Name Surname)] & Matriculation number: [XX-XXX-XXX] % \\ % uncomment if neccessary
+  \firstauthor & Matriculation number: \matnum % \\ % uncomment if neccessary
   % [Author 2 (Name, Surname)] & Matriculation number: [XX-XXX-XXX] % uncomment if neccessary
   \end{tabularx}
   \par
@@ -34,15 +49,15 @@
   Bern University of Applied Sciences, School of Health Professions
   \par
   
-  [Degree], [Year], [Location]
+  \degree, \cohort, \location
   \par
   \vspace{1cm}
   
   \begin{tabularx}{\textwidth}{
     @{} >{\raggedright\arraybackslash}X % @{} to remove table margin
     >{\raggedright\arraybackslash}X @{} }
-  Supervisor & [Name Surname], [Title] \\
-  Co-supervisor & [Name Surname], [Title] % \\  % uncomment if neccessary
+  Supervisor & \supervisor \\
+  Co-supervisor & \cosupervisor % \\  % uncomment if neccessary
   % Sponsor & [Name Surname], [Title]
   \end{tabularx}
 }
@@ -53,25 +68,27 @@
 
 % Location + date at the bottom
 {\fontsize{12pt}{14.4pt}\selectfont
-  [Place], [Submission date]
+  \place, \submitdate
   \par
 }
 
 
 % ACKNOWLEDGEMENTS PAGE
 % Comment if not needed
-
 \newpage
 
 \thispagestyle{empty}
+\onehalfspacing
 
 % Large top margin
 \vspace*{3cm} % * is needed here to make the space unbreakable
 
-{\fontsize{12pt}{14.4pt}\selectfont
+{\fontsize{11pt}{16.5pt}\selectfont
   Acknowledgements
   \par
+  \acknowledgements
 }
+% END OF ACKNOWLEGEMENTS PAGE
 
 % END OF TITLE PAGE
 % Do not comment
