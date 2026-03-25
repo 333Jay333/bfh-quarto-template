@@ -16,6 +16,9 @@
 \usepackage{tabularx} % for tables
 \usepackage[titles]{tocloft} % titles option is needed such that toc, lof, lot use heading 1 style
 
+% References
+\usepackage{calc} % to calculate the indent
+
 % SETUP
 
 % Headings
@@ -85,3 +88,22 @@
 \tocsection
 \tocfile{\listtablename}{lot}
 \endgroup}
+
+% References
+% --- APA hanging indent: exactly 1.27 cm ---
+\renewenvironment{CSLReferences}[2]
+{
+  \begin{list}{}
+    {
+      \setlength{\leftmargin}{1.27cm}
+      \setlength{\itemindent}{-1.27cm}
+      \setlength{\itemsep}{#2\baselineskip}
+      \setlength{\parsep}{0pt}
+    }
+}
+{\end{list}}
+
+% Increase spacing (1.5 is too much, 1.3 is closest to 1.5)
+\AtBeginEnvironment{CSLReferences}{%
+  \setlength{\baselineskip}{1.3\baselineskip}%
+}

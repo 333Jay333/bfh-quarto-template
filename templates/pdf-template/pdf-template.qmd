@@ -94,7 +94,10 @@ kable(head(cars))
 kable(head(pressure))
 ```
 
-{{< pagebreak >}}
+::: {=latex}
+\par\bigskip\noindent\clearpage
+:::
+<!-- Here, a simple pagebreak would not be enough because of the longtable object from LaTeX. Therefore, a "hard" pagebreak is needed -->
 
 # References
 
