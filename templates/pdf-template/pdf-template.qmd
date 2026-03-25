@@ -15,12 +15,8 @@ format:
     colorlinks: false
     include-in-header: header.tex
     include-before-body: titlepage.tex
-    title-block: false
 
 filters: [remove_title.lua] # removes the automatically generated title block using the remove_title.lua script
-
-fontsize: 11pt
-linestretch: 1.5
 
 geometry:
   - a4paper
