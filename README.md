@@ -44,6 +44,12 @@ Below, a possible workflow is described:
 1. Raw data (ideally in a `.csv` format) is imported into the [raw_data](raw_data/) folder
 2. Inside the [scripts](scripts/) folder, the user creates an R script to clean the data and exports the results into the [clean_data](clean_data/) folder
 3. The user creates a Quarto document for preparing his manuscript. At a later stage, different versions of the manuscript can be saved in the [manuscripts](manuscripts/) folder.
+4. If needed, the user can export his plots and tables into the provided folders for easy access and further usage in research dissemination.
+
+What advantages does such a file structure offer?
+
+- Data analysis can easily be repeated: in case of a data entry error or more available data, the raw data can be replaced at a later stage. If variables were correctly used in the manuscript, all values will be updated accordingly, plots and tables can be redrawn and the user can save hours of painstaking work manually correcting every value in his manuscript.
+- Product documentation: the whole process from data analysis to manuscript creation is clearly documented, allowing easy and accurate reproducibility of all steps of research.
 
 ## License
                         GNU GENERAL PUBLIC LICENSE
