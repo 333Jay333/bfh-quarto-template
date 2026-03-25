@@ -1,10 +1,25 @@
 # README
 ---
-This project is meant to offer a Quarto document template following the formatting guidelines from the Bern University of Applied Sciences (BFH).
+This project offers two Quarto document templates following the formatting guidelines from the Bern University of Applied Sciences, School of Health Professions.
 
 ## Features
 
+The templates offer both exporting to PDF as well as exporting to a Word document.
+
 ## Usage
+
+### PDF template
+For exporting to pdf, copy the YAML header from [pdf-template.qmd](templates/pdf-template/pdf-template.qmd).
+
+Next, you will need to include the following files:
+
+- [apa.csl](templates/pdf-template/apa.csl)
+- [header.tex](templates/pdf-template/header.tex)
+- [references.bib](templates/pdf-template/references.bib)
+- [remove_title.lua](templates/pdf-template/remove_title.lua)
+- [titlepage.tex](templates/pdf-template/titlepage.tex)
+
+Adjust the information in [header.tex](templates/pdf-template/header.tex) according to your needs.
 
 ## Requirements
 
