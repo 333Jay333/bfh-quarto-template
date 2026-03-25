@@ -19,7 +19,7 @@ Next, you will need to include the following files:
 - [remove_title.lua](templates/pdf-template/remove_title.lua)
 - [titlepage.tex](templates/pdf-template/titlepage.tex)
 
-Adjust the information in [header.tex](templates/pdf-template/header.tex) according to your needs.
+Adjust the information in the placeholders at the top of [titlepage.tex](templates/pdf-template/titlepage.tex) according to your needs. If more detailed changes are needed, these can be added by commenting/uncommenting lines of the file. 
 
 ## Requirements
 
