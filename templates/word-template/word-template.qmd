@@ -16,7 +16,7 @@ csl: apa.csl
 ---
 {{< pagebreak >}}
 
-# Abstract
+# Abstract {.heading1-unnumbered}
 
 **Introduction:** text
 
@@ -75,10 +75,7 @@ kable(head(cars))
 kable(head(pressure))
 ```
 
-::: {=latex}
-\par\bigskip\noindent\clearpage
-:::
-<!-- Here, a simple pagebreak would not be enough because of the longtable object from LaTeX. Therefore, a "hard" pagebreak is needed -->
+{{< pagebreak >}}
 
 # References
 
