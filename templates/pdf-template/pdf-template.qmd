@@ -7,12 +7,13 @@ format:
     pdf-engine: lualatex
     documentclass: article
     fontsize: 11pt          
-    geometry: "top=2.5cm,bottom=2.5cm,left=3.5cm,right=2.5cm"
     mainfont: "Arial"        # font family
     linestretch: 1.5         # line spacing
+    lang: en
     toc: true # generate a table of contents
     number-sections: true
     colorlinks: false
+    fig-cap-location: top
     include-in-header: header.tex
     include-before-body: titlepage.tex
 
@@ -51,6 +52,8 @@ csl: apa.csl
 
 ### Heading 1.1.1
 This is a test.
+
+This is a longer test paragraph: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 # Examples
 
@@ -119,5 +122,37 @@ kable(head(pressure))
 {{< pagebreak >}}
 
 # Appendix
+
+## Appendix A - every Appendix starts on a new page
+
+{{< pagebreak >}}
+
+## Declaration of Independence
+
+I hereby declare 
+
+- that I am familiar with the Bern University of Applied Sciences' policy on dealing with plagiarism,
+- that I have identified all sources, texts, graphics and/or ideas taken verbatim or paraphrased as such and cited them in accordance with the “Leitfaden für schriftliche Arbeiten im Departement Gesundheit“,
+- that I have written this paper independently and without using any sources or aids other than those indicated,
+- that I have fully acknowledged all aids used,
+- that I have not already submitted this paper or parts thereof in the same or a similar form to another educational institution,
+- that I am aware that plagiarism constitutes serious academic misconduct and will be sanctioned accordingly,
+- that I am aware that in the case of group work, the authors are jointly responsible for the entire content of the written paper.
+
+\vspace{1cm}
+
+::: {.latex}
+\begin{tabularx}{\textwidth}{
+  >{\hsize=.5\hsize}X % make left column small width
+  X % make right column use the remaining space
+}
+    
+  Title of the work \vspace{0.5cm} & text  \\ 
+  Name & text \\
+  Matriculation number & text \\
+  Place, Date  \vspace{0.5cm} & text \\
+  Signature & \includegraphics[width=0.1\textwidth]{figures/LaTeX_logo.png}
+  \end{tabularx}
+:::
 
 {{< pagebreak >}}

@@ -16,6 +16,13 @@
 \usepackage{tabularx} % for tables
 \usepackage[titles]{tocloft} % titles option is needed such that toc, lof, lot use heading 1 style
 
+% Bullet points
+\usepackage{enumitem}
+
+% Figures in LaTeX
+\usepackage{graphicx}
+
+
 % References
 \usepackage{calc} % to calculate the indent
 
@@ -89,6 +96,17 @@
 \tocfile{\listtablename}{lot}
 \endgroup}
 
+% Bullet points styling
+\setlist[itemize,1]{label = --}   
+
+\setlist[itemize]{
+  leftmargin = 1.3cm,
+  itemsep = 1.5\baselineskip,  % 1.5 line spacing between items
+  labelsep = 0.5cm,
+  topsep = 0pt,  % optional: spacing before list
+  parsep = 0pt
+}
+
 % References
 % --- APA hanging indent: exactly 1.27 cm ---
 \renewenvironment{CSLReferences}[2]
@@ -104,6 +122,6 @@
 {\end{list}}
 
 % Increase spacing (1.5 is too much, 1.3 is closest to 1.5)
-\AtBeginEnvironment{CSLReferences}{%
-  \setlength{\baselineskip}{1.3\baselineskip}%
-}
+% \AtBeginEnvironment{CSLReferences}{%
+%   \setlength{\baselineskip}{1.3\baselineskip}%
+% }
