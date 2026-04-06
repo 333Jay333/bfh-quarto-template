@@ -58,10 +58,8 @@ This is a longer test paragraph: Lorem ipsum dolor sit amet, consectetur adipisc
 # Examples
 
 ## Citations
-This is a normal citation [@wickham2019].
-
-Wickham et al. [-@wickham2019] wrote this and @nobody2023 wrote this.
-
+This is a normal citation [@wickham2019]. \
+Wickham et al. [-@wickham2019] wrote this and @nobody2023 wrote this. \
 Multiple authors wrote this [also @wickham2019; @nobody2023 pp. 10-11]. 
 
 ## LaTeX formula
@@ -73,7 +71,8 @@ E(\varepsilon_{it} \mid Y_{i,t-1}) = 0. $$
 
 The LaTeX logo can be seen in @fig-latex-logo.
 
-![LaTeX logo](figures/LaTeX_logo.png){#fig-latex-logo}
+![LaTeX logo](figures/LaTeX_logo.png){#fig-latex-logo fig-pos="H"}
+
 
 ## Table
 
@@ -81,22 +80,15 @@ An example of a table can be seen in @tbl-cars.
 
 ```{r}
 #| label: tbl-cars
-#| tbl-cap: "Cars and pressure from cars dataset"
-#| tbl-subcap: 
-#|   - "Cars"
-#|   - "Pressure"
-#| layout-ncol: 2
+#| tbl-pos: "H"
+#| tbl-cap: "Pressure from cars dataset"
 #| echo: false
 
 library(knitr)
-kable(head(cars))
 kable(head(pressure))
 ```
 
-::: {=latex}
-\par\bigskip\noindent\clearpage
-:::
-<!-- Here, a simple pagebreak would not be enough because of the longtable object from LaTeX. Therefore, a "hard" pagebreak is needed -->
+{{< pagebreak >}}
 
 # References
 
@@ -118,6 +110,17 @@ kable(head(pressure))
 {{< pagebreak >}}
 
 # List of aids  
+
+::: {.latex}
+\begin{tabularx}{\textwidth}{
+  >{\hsize=.5\hsize}X % make left column small width
+  X 
+  X
+}
+    
+  \textbf{Aid} & \textbf{Purpose} & \textbf{Text passage}
+  \end{tabularx}
+:::
 
 {{< pagebreak >}}
 
