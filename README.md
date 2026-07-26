@@ -21,7 +21,7 @@ Next, you will need to include the following files in the same folder that your 
 - [remove_title.lua](templates/pdf-template/remove_title.lua)
 - [titlepage.tex](templates/pdf-template/titlepage.tex)
 
-Adjust the information in the placeholders at the top of [titlepage.tex](templates/pdf-template/titlepage.tex) according to your needs. If more detailed changes are needed, these can be added by commenting/uncommenting lines of the file. 
+Adjust the information in the placeholders at the top of [titlepage.tex](templates/pdf-template/titlepage.tex) as well as in [header.tex](templates/pdf-template/header.tex) according to your needs. If more detailed changes are needed, these can be added by commenting/uncommenting lines of the files. 
 
 Once you have successfully set up your Quarto document and all the required files are in place, you can render your document and will receive a PDF file following the formatting guidelines.
 
