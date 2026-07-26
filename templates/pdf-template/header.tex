@@ -107,14 +107,32 @@
 
 % References
 % --- APA hanging indent: exactly 1.27 cm ---
-\renewenvironment{CSLReferences}[2]
-{
-  \begin{list}{}
+\makeatletter
+\@ifundefined{CSLReferences}
+  {
+    \newenvironment{CSLReferences}[2]
     {
-      \setlength{\leftmargin}{1.27cm}
-      \setlength{\itemindent}{-1.27cm}
-      \setlength{\itemsep}{#2\baselineskip}
-      \setlength{\parsep}{0pt}
+      \begin{list}{}
+        {
+          \setlength{\leftmargin}{1.27cm}
+          \setlength{\itemindent}{-1.27cm}
+          \setlength{\itemsep}{#2\baselineskip}
+          \setlength{\parsep}{0pt}
+        }
     }
-}
-{\end{list}}
+    {\end{list}}
+  }
+  {
+    \renewenvironment{CSLReferences}[2]
+    {
+      \begin{list}{}
+        {
+          \setlength{\leftmargin}{1.27cm}
+          \setlength{\itemindent}{-1.27cm}
+          \setlength{\itemsep}{#2\baselineskip}
+          \setlength{\parsep}{0pt}
+        }
+    }
+    {\end{list}}
+  }
+\makeatother
